@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.0.0/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-gradient-to-r from-blue-400 to-purple-500 flex flex-col">
+    
+    <!-- Header Section -->
+    <header class="p-4 shadow-md flex items-center justify-center">
+        <img src="Aashiyana.png" alt="Society Logo" class="w-10 h-10 mr-2">
+        <h1 class="text-xl font-bold text-gray-700">Aashiyana Housing</h1>
+        <button class="btn btn-outline btn-sm btn-secondary">LOGGED IN USER</button>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="flex justify-center items-center flex-grow mt-2">
+        <div class="sm:w-96 bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <div class="flex justify-center items-center mb-4 animate-fade-in-down">
+                <h2 class="text-sm font-bold text-gray-700">Enter Collection Details</h2>
+                
+            </div>
+            
+            <label class="block mb-2 text-gray-600">Flat No</label>
+            <select class="select select-bordered w-full mb-4 bg-gray-100 hover:bg-gray-200">
+                <option disabled selected>Select Flat No</option>
+                <option>101</option>
+                <option>102</option>
+                <option>103</option>
+            </select>
+            
+            <label class="block mb-2 text-gray-600">Name</label>
+            <input type="text" placeholder="Auto-filled based on Flat No" class="input input-bordered w-full mb-4 bg-gray-100" disabled>
+
+            <label class="block mb-2 text-gray-600">Mobile Number</label>
+            <input type="text" placeholder="Auto-filled based on Flat No" class="input input-bordered w-full mb-4 bg-gray-100" disabled>
+
+            <label class="block mb-2 text-gray-600">Payee Number</label>
+            <input type="text" placeholder="Enter Number of the Payee" class="input input-bordered w-full mb-4 bg-gray-100">
+            
+            <label class="block mb-2 text-gray-600">Input Text</label>
+            <input type="number" placeholder="Enter details" class="input input-bordered w-full mb-4 bg-gray-100">
+            
+            <div class="flex flex-col sm:flex-row gap-4 mb-4">
+                <div>
+                    <label class="block mb-2 text-gray-600">Amount</label>
+                    <input type="number" placeholder="Amt" class="input input-bordered w-full sm:w-24 bg-gray-100">
+                </div>
+                <div>
+                    <label class="block mb-2 text-gray-600">Date</label>
+                    <input type="date" class="input input-bordered w-full sm:w-36 bg-gray-100" value="2025-02-19">
+                </div>
+            </div>
+                <div class="mx-2 my-2 flex justify-center">          
+            <button class="btn btn-primary w-1/2 mx-2">SUBMIT</button>
+            <button class="btn btn-secondary w-1/2 mx-2">SUBMIT AND NEW</button>
+                </div>  
+        </div>
+    </main>
+    
+    <!-- Footer Section -->
+        <footer role="tablist" class="tabs tabs-lifted mt-2 p-4 flex justify-around">
+            <a role="tab" class="tab">
+                <img src="home.ico" alt="Home" class="w-10 h-10">    
+            </a>
+            <a role="tab" class="tab tab-active">
+                <img src="paymentcollection.ico" alt="Payment" class="w-10 h-10">    
+            </a>
+            <a role="tab" class="tab">
+                <img src="Extraservices.ico" alt="Settings" class="w-10 h-10">    
+            </a>
+            <a role="tab" class="tab">
+                <img src="Profile.ico" alt="Profile" class="w-10 h-10">    
+            </a>
+        </footer>
+
+
+    
+</body>
+</html>
